@@ -1,4 +1,6 @@
 #include "game.h"
+#include "types.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -6,12 +8,6 @@
 
 #include <netdb.h>
 #include <netinet/in.h>
-
-#define TRUE 1
-#define FALSE 0
-
-typedef struct sockaddr SOCKADDR;
-typedef struct sockaddr_in SOCKADDR_IN;
 
 int main(int argc, const char** argv) {
   int srvSock, cliSock, portNo;
